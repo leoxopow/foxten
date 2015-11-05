@@ -1,0 +1,43 @@
+extend ./parts/layout.jade
+
+block main
+	.container
+		.row
+			aside.col-xs-4
+				h2.head-aside ВСЕ ЗАДАНИЯ
+			main.col-xs-8
+				section.breadcrumbs
+					ol.breadcrumb
+						li: a(href="#") Главная страница
+						li: a(href="#") Все задания
+						li.active Установка и ремонт техники
+				section.slider
+					ul.allTask
+						li
+							img(src="/images/all-task-slide.jpg", alt="")
+							.cap ТЕПЛОИЗОЛЯЦИЯ ДОМОВ
+						li
+							img(src="/images/all-task-slide.jpg", alt="")
+							.cap ТЕПЛОИЗОЛЯЦИЯ ДОМОВ
+				section.filter
+				section.adverts-tasks
+					article.main-advert.row
+						.col-xs-2
+							a(href="#"): img(src="../images/advert-tasks1.jpg", alt="")
+						.col-xs-6
+							h1: a(href="#") Необходимо сделать генеральную уборку квартиры
+							p.address г. Комсомольск, ул. Ленина, 124
+
+							p.description Мытьё твёрдых полов (линолеум, плитка, ламинат, паркет, мрамор), окон, дверей.
+								
+						.col-xs-4
+							p.created Создано: 17.04.2015
+							p.due-time 16:50:34
+							p
+								span.opinion
+									a.like(href="#")
+									|215
+								span.opinion
+									a.dislike(href="#")
+									|34
+							p.budjet 1500 руб.					

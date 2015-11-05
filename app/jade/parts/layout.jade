@@ -1,0 +1,78 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		//- meta(name="viewport", content="initial-scale=1 ")
+		link(href="/components/bootstrap/dist/css/bootstrap.min.css", rel="stylesheet")
+		link(href="/components/bxslider-4/dist/jquery.bxslider.min.css", rel="stylesheet")
+		link(href="/css/style.css", rel="stylesheet")
+		block title
+			title Foxten
+	body
+		#wrap
+			nav(role="navigation").navbar.navbar-inverse.navbar-main
+				.container
+					.navbar-header
+						button(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse").navbar-toggle.collapsed
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+						a(href="#" ).navbar-brand 
+							img(src="/images/logo.png")
+					.collapse.navbar-collapse.navbar-ex1-collapse
+						ul.nav.navbar-nav 
+							li: a(href="#") СОЗДАТЬ ЗАДАНИЕ
+							li: a(href="#") ВСЕ ЗАДАНИЯ 
+							li: a(href="#") ИСПОЛНИТЕЛИ 
+							li.dropdown
+								a(href="#" data-toggle="dropdown") Здравствуйте, Александр
+								ul.dropdown-menu
+									li: a(href="#")
+										span.icon.priv-cab
+										| Личный кабинет
+									li: a(href="#")
+										span.icon.notification
+										| Мои сообщения
+									li: a(href="#")
+										span.icon.balance
+										| Баланс: 1000 руб.
+									li: a(href="#")
+										span.icon.out
+										| Выйти
+							li: a(href="#")
+								img.city-menu(src="/images/position-bigger.png", alt="")
+								| Комсомольск
+			block main		
+			
+		footer.footer
+			.nav-footer
+				.container
+					ul.nav.navbar-nav
+						li: a(href="#") Как это работает
+						li: a(href="#") Условия пользования
+						li: a(href="#") Вопросы и предложения
+						li: a(href="#") Безопасность
+						li: a(href="#") Реклама
+						li: a(href="#") Контакты
+			.container
+				section.row.text-content
+					.col-xs-8
+						p Создайте своё задание, которое Вам необходимо выполнить, и в течение нескольких минут 
+							| получите заявки от наших талантливых исполнителей. Сравните их предложения и цены, а затем 
+							|выберите лучшего для выполнения своего проекта.
+					.col-xs-4
+						a.soc(href="#")
+							img(src="/images/twitter.png")
+						a.soc(href="#")
+							img(src="/images/fb.png")
+						a.soc(href="#")
+							img(src="/images/vk.png")
+						a.soc(href="#")
+							img(src="/images/ok.png")
+				p.copyright Copyright © 2015 «Foxten». Все права защищены.
+		script(src="/components/jquery/dist/jquery.min.js")
+		script(src="/components/bootstrap/dist/js/bootstrap.min.js")
+		script(src="/components/bxslider-4/dist/jquery.bxslider.min.js")
+		script(src="/js/main.js")

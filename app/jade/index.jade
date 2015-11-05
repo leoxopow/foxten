@@ -1,0 +1,222 @@
+extend ./parts/layout.jade
+
+block main
+	.jumb
+		.container
+			.row
+				.col-xs-offset-6.col-xs-6
+					h2 Наши исполнители могут:
+					ul
+						li Купить и привезти продукты
+						li Помочь в уборке по хозяйству
+						li Починить бытовую технику
+						li Сделать модельную стрижку
+						li Забрать и доставить груз
+						li и сотни других услуг
+					p
+						a.btn.btn-default СОЗДАТЬ ЗАДАНИЕ
+						a.btn.btn-primary СТАТЬ ИСПОЛНИТЕЛЕМ
+	section.categories
+		.container
+			.clearfix.categories-chunk
+				.col-xs-1-7
+					a.category-item
+						img(src="/images/cat-item-1.png", alt="")
+						span.new-order +6
+					a(href="#") 
+						span КУРЬЕРСКИЕ УСЛУГИ
+				.col-xs-1-7
+					a.category-item
+						img(src="/images/cat-item-2.png", alt="")
+					a(href="#") 
+						span КОМПЬЮТЕРНАЯ ПОМОЩЬ
+				.col-xs-1-7
+					a.category-item
+						img(src="/images/cat-item-3.png", alt="")
+					a(href="#") 
+						span РЕМОНТ ЦИФРОВОЙ ТЕХНИКИ
+				.col-xs-1-7
+					a.category-item
+						img(src="/images/cat-item-4.png", alt="")
+					a(href="#") 
+						span УСТАНОВКА И РЕМОНТ ТЕХНИКИ
+				.col-xs-1-7
+					a.category-item
+						img(src="/images/cat-item-5.png", alt="")
+					a(href="#") 
+						span БЫТОВОЙ РЕМОНТ
+				.col-xs-1-7
+					a.category-item
+						img(src="/images/cat-item-6.png", alt="")
+					a(href="#") 
+						span УБОРКА И ПОМОЩЬ ПО ХОЗЯЙСТВУ
+				.col-xs-1-7
+					a.category-item
+						img(src="/images/cat-item-7.png", alt="")
+					a(href="#") 
+						span ИНТЕРНЕТ И ДИЗАЙН
+			.clearfix.categories-chunk
+				.col-xs-1-7
+					a.category-item
+						img(src="/images/cat-item-8.png", alt="")
+						span.new-order +6
+					a(href="#") 
+						span КУПИТЬ И ДОСТАВИТЬ
+				.col-xs-1-7
+					a.category-item
+						img(src="/images/cat-item-9.png", alt="")
+					a(href="#") 
+						span ДАЧА И ОГОРОД
+				.col-xs-1-7
+					a.category-item
+						img(src="/images/cat-item-10.png", alt="")
+					a(href="#") 
+						span МЕРОПРИЯТИЯ И ПРОМО-АКЦИИ
+				.col-xs-1-7
+					a.category-item
+						img(src="/images/cat-item-11.png", alt="")
+					a(href="#") 
+						span ФОТО И ВИДЕО УСЛУГИ
+				.col-xs-1-7
+					a.category-item
+						img(src="/images/cat-item-12.png", alt="")
+					a(href="#") 
+						span ВИРТУАЛЬНЫЙ ПОМОЩНИК
+				.col-xs-1-7
+					a.category-item
+						img(src="/images/cat-item-13.png", alt="")
+					a(href="#") 
+						span РЕМОНТ И ПОШИВ ОДЕЖДЫ
+				.col-xs-1-7
+					a.category-item
+						img(src="/images/cat-item-14.png", alt="")
+					a(href="#") 
+						span ЮРИДИЧЕСКАЯ ПОМОЩЬ
+			.clearfix.categories-chunk
+				.col-xs-1-7
+					a.category-item
+						img(src="/images/cat-item-15.png", alt="")
+						span.new-order +6
+					a(href="#") 
+						span КРАСОТА И ЗДОРОВЬЕ
+				.col-xs-1-7
+					a.category-item
+						img(src="/images/cat-item-16.png", alt="")
+					a(href="#") 
+						span РИЭЛТОРСКАЯ ПОМОЩЬ
+				.col-xs-1-7
+					a.category-item
+						img(src="/images/cat-item-17.png", alt="")
+					a(href="#") 
+						span ГРУЗОПЕРЕВОЗКИ
+				.col-xs-1-7
+					a.category-item
+						img(src="/images/cat-item-18.png", alt="")
+					a(href="#") 
+						span ОБРАЗОВАНИЕ
+				.new-cat
+					a.category-item
+						img(src="/images/new-cat.png", alt="")
+					p.text-center Нужен новый раздел? 
+						a(href="#") Напишите нам!
+
+	section.latest-adverts
+		.container
+			h2.main-h2 ЧТО ЗАКАЗЫВАЮТ НА 
+				span FOX
+				|TEN ПРЯМО СЕЙЧАС?
+			article.main-advert.row
+				.col-xs-2
+					a(href="#"): img(src="../images/advert-main1.jpg", alt="")
+				.col-xs-7
+					h1: a(href="#") Необходимо сделать генеральную уборку квартиры
+					p.address г. Комсомольск, ул. Ленина, 124
+
+					p.description Мытьё твёрдых полов (линолеум, плитка, ламинат, паркет, мрамор), окон, дверей.
+						|Санитарно-гигиеническая обработка санузлов с удалением всех видов загрязнений.
+						|Удаление всех видов пыли при проведении уборки.
+				.col-xs-3
+					p.created Создано: 17.04.2015
+					p.due-time 16:50:34
+					p
+						span.opinion
+							a.like(href="#")
+							|215
+						span.opinion
+							a.dislike(href="#")
+							|34
+					p.budjet 1500 руб.
+			article.main-advert.row
+				.col-xs-2
+					a(href="#"): img(src="../images/advert-main2.jpg", alt="")
+				.col-xs-7
+					h1: a(href="#") Необходимо сделать генеральную уборку квартиры
+					p.address г. Комсомольск, ул. Ленина, 124
+
+					p.description Мытьё твёрдых полов (линолеум, плитка, ламинат, паркет, мрамор), окон, дверей.
+						|Санитарно-гигиеническая обработка санузлов с удалением всех видов загрязнений.
+						|Удаление всех видов пыли при проведении уборки.
+				.col-xs-3
+					p.created Создано: 17.04.2015
+					p.due-time 16:50:34
+					p
+						span.opinion
+							a.like(href="#")
+							|215
+						span.opinion
+							a.dislike(href="#")
+							|34
+					p.budjet 1500 руб.
+			article.main-advert.row
+				.col-xs-2
+					a(href="#"): img(src="../images/advert-main1.jpg", alt="")
+				.col-xs-7
+					h1: a(href="#") Необходимо сделать генеральную уборку квартиры
+					p.address г. Комсомольск, ул. Ленина, 124
+
+					p.description Мытьё твёрдых полов (линолеум, плитка, ламинат, паркет, мрамор), окон, дверей.
+						|Санитарно-гигиеническая обработка санузлов с удалением всех видов загрязнений.
+						|Удаление всех видов пыли при проведении уборки.
+				.col-xs-3
+					p.created Создано: 17.04.2015
+					p.due-time 16:50:34
+					p
+						span.opinion
+							a.like(href="#")
+							|215
+						span.opinion
+							a.dislike(href="#")
+							|34
+					p.budjet 1500 руб.
+			article.main-advert.row
+				.col-xs-2
+					a(href="#"): img(src="../images/advert-main2.jpg", alt="")
+				.col-xs-7
+					h1: a(href="#") Необходимо сделать генеральную уборку квартиры
+					p.address г. Комсомольск, ул. Ленина, 124
+
+					p.description Мытьё твёрдых полов (линолеум, плитка, ламинат, паркет, мрамор), окон, дверей.
+						|Санитарно-гигиеническая обработка санузлов с удалением всех видов загрязнений.
+						|Удаление всех видов пыли при проведении уборки.
+				.col-xs-3
+					p.created Создано: 17.04.2015
+					p.due-time 16:50:34
+					p
+						span.opinion
+							a.like(href="#")
+							|215
+						span.opinion
+							a.dislike(href="#")
+							|34
+					p.budjet 1500 руб.
+			.text-center
+				button.btn.btn-white.btn-lg Показать все задания
+	section.before-footer
+		.container
+			h2.text-center НАНИМАЙТЕ ИСПОЛНИТЕЛЕЙ - ЭКОНОМЬТЕ СРЕДСТВА
+			.text-center.triggers
+				img(src="/images/trigger-1.png", alt="")
+				img(src="/images/next-arrow.png", alt="")
+				img(src="/images/trigger-2.png", alt="")
+				img(src="/images/next-arrow.png", alt="")
+				img(src="/images/trigger-3.png", alt="")
