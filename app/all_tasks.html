@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="/components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/components/bxslider-4/dist/jquery.bxslider.min.css" rel="stylesheet">
+    <link href="/components/jquery-ui/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     <title>Foxten</title>
   </head>
@@ -37,6 +38,11 @@
         <div class="row">
           <aside class="col-xs-4">
             <h2 class="head-aside">ВСЕ ЗАДАНИЯ</h2>
+            <ul class="list-group cat-list">
+              <li class="list-group-item"><span class="badge">14</span><a href="#" class="item-aside"><img src="../images/cat-item-1.png" alt=""></a><a href="#">Курьерские услуги</a></li>
+              <li class="list-group-item"><span class="badge">143</span><a href="#" class="item-aside"><img src="../images/cat-item-2.png" alt=""></a><a href="#">Компьютерная помощь</a></li>
+              <li class="list-group-item"><span class="badge">29</span><a href="#" class="item-aside"><img src="../images/cat-item-3.png" alt=""></a><a href="#">Ремонт цифровой техники</a></li>
+            </ul>
           </aside>
           <main class="col-xs-8">
             <section class="breadcrumbs">
@@ -46,7 +52,7 @@
                 <li class="active">Установка и ремонт техники</li>
               </ol>
             </section>
-            <section class="slider">
+            <section class="slider task-slider">
               <ul class="allTask">
                 <li><img src="/images/all-task-slide.jpg" alt="">
                   <div class="cap">ТЕПЛОИЗОЛЯЦИЯ ДОМОВ</div>
@@ -56,8 +62,86 @@
                 </li>
               </ul>
             </section>
-            <section class="filter"></section>
+            <section class="filter">
+              <form action="" method="post">
+                <div class="clearfix">
+                  <div class="col-xs-4">
+                    <div class="row range-inputs">
+                      <div class="col-xs-6">
+                        <input id="minRange" type="text" class="form-control">
+                      </div>
+                      <div class="col-xs-6">
+                        <input id="maxRange" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div id="slider-range"></div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">Рейтинг заказчиков
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="checkbox">
+                      <label for="">
+                        <input type="checkbox" name="">Все
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label for="">
+                        <input type="checkbox" name="">Физические лица
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label for="">
+                        <input type="checkbox" name="">Юридические лица
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="checkbox">
+                      <label for="">
+                        <input type="checkbox" name="">Срочные задания
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label for="">
+                        <input type="checkbox" name="">Без предложений
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </section>
             <section class="jobs-tasks">
+              <article class="main-job row">
+                <div class="col-xs-2"><a href="#"><img src="../images/job-tasks1.jpg" alt=""></a></div>
+                <div class="col-xs-6">
+                  <h1><a href="#">Необходимо сделать генеральную уборку квартиры</a></h1>
+                  <p class="address">г. Комсомольск, ул. Ленина, 124</p>
+                  <p class="description">Мытьё твёрдых полов (линолеум, плитка, ламинат, паркет, мрамор), окон, дверей.</p>
+                </div>
+                <div class="col-xs-4">
+                  <p class="created">Создано: 17.04.2015</p>
+                  <p class="due-time">16:50:34</p>
+                  <p><span class="opinion"><a href="#" class="like"></a>215</span><span class="opinion"><a href="#" class="dislike"></a>34</span></p>
+                  <p class="budjet">1500 руб.</p>
+                </div>
+              </article>
+              <article class="main-job row">
+                <div class="col-xs-2"><a href="#"><img src="../images/job-tasks1.jpg" alt=""></a></div>
+                <div class="col-xs-6">
+                  <h1><a href="#">Необходимо сделать генеральную уборку квартиры</a></h1>
+                  <p class="address">г. Комсомольск, ул. Ленина, 124</p>
+                  <p class="description">Мытьё твёрдых полов (линолеум, плитка, ламинат, паркет, мрамор), окон, дверей.</p>
+                </div>
+                <div class="col-xs-4">
+                  <p class="created">Создано: 17.04.2015</p>
+                  <p class="due-time">16:50:34</p>
+                  <p><span class="opinion"><a href="#" class="like"></a>215</span><span class="opinion"><a href="#" class="dislike"></a>34</span></p>
+                  <p class="budjet">1500 руб.</p>
+                </div>
+              </article>
               <article class="main-job row">
                 <div class="col-xs-2"><a href="#"><img src="../images/job-tasks1.jpg" alt=""></a></div>
                 <div class="col-xs-6">
@@ -107,6 +191,7 @@
     <script src="/components/jquery/dist/jquery.min.js"></script>
     <script src="/components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/components/bxslider-4/dist/jquery.bxslider.min.js"></script>
+    <script src="/components/jquery-ui/jquery-ui.min.js"></script>
     <script src="/js/main.js"></script>
   </body>
 </html>

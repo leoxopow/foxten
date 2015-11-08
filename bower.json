@@ -19,6 +19,7 @@
   "dependencies": {
     "jquery": "1.11",
     "bootstrap": "~3.3.5",
-    "bxslider-4": "~4.2.5"
+    "bxslider-4": "~4.2.5",
+    "jquery-ui": "~1.11.4"
   }
 }

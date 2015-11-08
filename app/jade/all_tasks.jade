@@ -5,13 +5,29 @@ block main
 		.row
 			aside.col-xs-4
 				h2.head-aside ВСЕ ЗАДАНИЯ
+				ul.list-group.cat-list
+					li.list-group-item
+						span.badge 14
+						a.item-aside(href="#")
+							img(src="../images/cat-item-1.png", alt="")
+						a(href="#") Курьерские услуги
+					li.list-group-item
+						span.badge 143
+						a.item-aside(href="#")
+							img(src="../images/cat-item-2.png", alt="")
+						a(href="#") Компьютерная помощь
+					li.list-group-item
+						span.badge 29
+						a.item-aside(href="#")
+							img(src="../images/cat-item-3.png", alt="")
+						a(href="#") Ремонт цифровой техники
 			main.col-xs-8
 				section.breadcrumbs
 					ol.breadcrumb
 						li: a(href="#") Главная страница
 						li: a(href="#") Все задания
 						li.active Установка и ремонт техники
-				section.slider
+				section.slider.task-slider
 					ul.allTask
 						li
 							img(src="/images/all-task-slide.jpg", alt="")
@@ -20,7 +36,82 @@ block main
 							img(src="/images/all-task-slide.jpg", alt="")
 							.cap ТЕПЛОИЗОЛЯЦИЯ ДОМОВ
 				section.filter
+					form(action="", method="post")
+						.clearfix
+							.col-xs-4
+								.row.range-inputs
+									.col-xs-6
+										input#minRange.form-control(type="text")
+									.col-xs-6
+										input#maxRange.form-control(type="text")
+								#slider-range
+								.checkbox
+									label
+										input(type="checkbox")
+										|Рейтинг заказчиков
+							.col-xs-4
+								.checkbox
+									label(for="")
+										input(type="checkbox", name="")
+										| Все
+								.checkbox
+									label(for="")
+										input(type="checkbox", name="")
+										| Физические лица
+								.checkbox
+									label(for="")
+										input(type="checkbox", name="")
+										| Юридические лица
+							.col-xs-4
+								.checkbox
+									label(for="")
+										input(type="checkbox", name="")
+										| Срочные задания
+								.checkbox
+									label(for="")
+										input(type="checkbox", name="")
+										| Без предложений
 				section.jobs-tasks
+					article.main-job.row
+						.col-xs-2
+							a(href="#"): img(src="../images/job-tasks1.jpg", alt="")
+						.col-xs-6
+							h1: a(href="#") Необходимо сделать генеральную уборку квартиры
+							p.address г. Комсомольск, ул. Ленина, 124
+
+							p.description Мытьё твёрдых полов (линолеум, плитка, ламинат, паркет, мрамор), окон, дверей.
+								
+						.col-xs-4
+							p.created Создано: 17.04.2015
+							p.due-time 16:50:34
+							p
+								span.opinion
+									a.like(href="#")
+									|215
+								span.opinion
+									a.dislike(href="#")
+									|34
+							p.budjet 1500 руб.
+					article.main-job.row
+						.col-xs-2
+							a(href="#"): img(src="../images/job-tasks1.jpg", alt="")
+						.col-xs-6
+							h1: a(href="#") Необходимо сделать генеральную уборку квартиры
+							p.address г. Комсомольск, ул. Ленина, 124
+
+							p.description Мытьё твёрдых полов (линолеум, плитка, ламинат, паркет, мрамор), окон, дверей.
+								
+						.col-xs-4
+							p.created Создано: 17.04.2015
+							p.due-time 16:50:34
+							p
+								span.opinion
+									a.like(href="#")
+									|215
+								span.opinion
+									a.dislike(href="#")
+									|34
+							p.budjet 1500 руб.
 					article.main-job.row
 						.col-xs-2
 							a(href="#"): img(src="../images/job-tasks1.jpg", alt="")
